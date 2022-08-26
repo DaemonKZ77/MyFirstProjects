@@ -15,6 +15,8 @@ public class HW_3_1 {
         System.out.println("Курс доллара к " + eu + " евро  - " + convert (eu));
         System.out.println(percent(eu));
 
+        print("Hello world");
+
     }
 
     public static int sum(int a, int b) {
@@ -46,5 +48,11 @@ public static float convert (float euro){
     double pers =  a * vr/100;
         String result = "Результат " + Double.toString(vr) + "% от " + Double.toString(a) + " равно  - " + Double.toString(pers);
         return result;
+    }
+
+    public static void print (String string){
+        for (int i = 0; i < 4; i++) {
+            System.out.println(string);
+        }
     }
 }

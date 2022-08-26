@@ -8,6 +8,12 @@ public class HW_3_1 {
         System.out.println("Метод Mutliply - " + multiply (a, b));
         System.out.println("Метод Subt - " + subt (a, b));
         System.out.println("Метод Devision - " + div (a, b));
+        /*-------------------------------------------------------------------------------------*/
+
+        System.out.println("SECOND BLOCK");
+        float eu = 50;
+        System.out.println("Курс доллара к " + eu + "евро  - " + convert (eu));
+
     }
 
     public static int sum(int a, int b) {
@@ -26,4 +32,11 @@ public class HW_3_1 {
         float result = a/b;
         return result;
     }
+
+    /*SECOND BLOCK*/
+public static float convert (float euro){
+    float course = 50;
+    float result = euro * course;
+    return result;
+}
 }

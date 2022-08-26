@@ -12,7 +12,8 @@ public class HW_3_1 {
 
         System.out.println("SECOND BLOCK");
         float eu = 50;
-        System.out.println("Курс доллара к " + eu + "евро  - " + convert (eu));
+        System.out.println("Курс доллара к " + eu + " евро  - " + convert (eu));
+        System.out.println(percent(eu));
 
     }
 
@@ -39,4 +40,11 @@ public static float convert (float euro){
     float result = euro * course;
     return result;
 }
+
+    public static String percent (double a){
+    double vr = 10;
+    double pers =  a * vr/100;
+        String result = "Результат " + Double.toString(vr) + "% от " + Double.toString(a) + " равно  - " + Double.toString(pers);
+        return result;
+    }
 }

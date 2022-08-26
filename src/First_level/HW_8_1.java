@@ -20,5 +20,6 @@ public class HW_8_1 {
 
     public static void info_1 (String name, int cost, int year)    {
         System.out.println(name + "Будет получить " + cost + " через " + year + " лет");
+
     }
 }

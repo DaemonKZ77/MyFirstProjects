@@ -15,10 +15,16 @@ public class HW_9_1{
         System.out.println(max (num_1, num_2));
         //MIN from 3
         System.out.println(min (num_1, num_2, num_3));
+        //MID from 3
+        System.out.println(mid (num_1, num_2, num_3));
+        //Compare from 2
+        System.out.println(compare(num_1));
+
     }
 
     public static int max (int a, int b){
         System.out.println("---------------MAX from 2-----------------------");
+
         int result = a;
         if (b>a) {
             result = b;
@@ -30,6 +36,23 @@ public class HW_9_1{
 
         int result = Math.min(a, b);
         result = Math.min(result,c);
+        return result;
+    }
+    public static double mid (int a, int b, int c){
+        System.out.println("---------------MID from 3-----------------------");
+
+        double result = (a+b+c)/3;
+        return result;
+    }
+
+    public static String compare (int a){
+        System.out.println("---------------COMPARE from 2-----------------------");
+        String result = "Число меньше 5";
+        if (a>5) {
+            result = "Число больше 5";
+        } else if (a==5) {
+            result = "Число равно 5";
+        }
         return result;
     }
 }

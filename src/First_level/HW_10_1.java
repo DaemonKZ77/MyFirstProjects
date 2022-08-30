@@ -1,7 +1,14 @@
 package First_level;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
 public class HW_10_1 {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
+
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+
 //        1
         int i = 0;
         while (i<10) {
@@ -19,8 +26,15 @@ public class HW_10_1 {
 
             if (result == (int)result) {
                 System.out.println(j);
-
             }
+
+        }
+        System.out.println("Finish");
+        String string = reader.readLine();
+        String number = reader.readLine();
+
+        for (int k = 0; k < Integer.parseInt(number) ; k++) {
+            System.out.print(string + " ");
 
         }
     }
